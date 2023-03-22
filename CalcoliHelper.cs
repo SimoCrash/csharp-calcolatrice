@@ -32,9 +32,50 @@ namespace csharp_calcolatrice
                 throw new Exception();
             }
         }
-        public static double NumMin(double a, in double b) => a > b ? b : a;
-        public static int NumMax(int a, int b) => a > b ? a : b;
-        public static double NumMax(double a, double b) => a < b ? b : a;
-
+        public static double NumMin(double a, in double b)
+        {
+            if (a > b)
+            {
+                return b;
+            }
+            else if (a < b)
+            {
+                return a;
+            }
+            else
+            {
+                throw new Exception();
+            }
+        }
+        public static int NumMax(int a, int b)
+        {
+            if (a > b)
+            {
+                return a;
+            }
+            else if (a < b)
+            {
+                return b;
+            }
+            else
+            {
+                throw new Exception();
+            }
+        }
+        public static double NumMax(double a, double b)
+        {
+            if (a > b)
+            {
+                return a;
+            }
+            else if (a < b)
+            {
+                return b;
+            }
+            else
+            {
+                throw new Exception();
+            }
+        }
     }
 }
