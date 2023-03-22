@@ -16,9 +16,10 @@ namespace csharp_calcolatrice
         public static double Moltiplicazione(double a, double b) => a * b;
         public static int ValoreAssoluto(int a) => a >= 0 ? a : -a;
         public static double ValoreAssoluto(double a) => a >= 0 ? a : -a;
+        public static int NumMin(int a, int b)/* => Math.Min(a, b);*/ => a > b ? b : a;
+        public static double NumMin(double a, in double b) => a > b ? b : a;
+        
 
-
-//Valore assoluto di un numero double
 //- Minimo tra due numeri interi
 //- Minimo tra due numeri double
 //- Massimo tra due numeri interi
