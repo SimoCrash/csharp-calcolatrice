@@ -14,6 +14,8 @@ namespace csharp_calcolatrice
         public static double Differenza(double a, double b) => a - b;
         public static int Moltiplicazione(int a, int b) => a * b;
         public static double Moltiplicazione(double a, double b) => a * b;
+        public static int ValoreAssoluto(int a) => a >= 0 ? a : (-a);
+        
 
     }
 }
