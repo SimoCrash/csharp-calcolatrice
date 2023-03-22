@@ -12,6 +12,7 @@ namespace csharp_calcolatrice
         public static double Somma(double a, double b) => a + b;
         public static int Differenza(int a, int b) => a - b;
         public static double Differenza(double a, double b) => a - b;
+        public static int Moltiplicazione(int a, int b) => a * b;
 
     }
 }
